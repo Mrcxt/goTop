@@ -4,6 +4,10 @@
 
 一款快捷返回顶部的 vue 插件，放置在页面右下角位置。
 
+## 演示
+
+[DEMO](https://mrcxt.github.io/goTop/dist/index.html)
+
 ## 食用方法
 
 ### 1.注册组件
