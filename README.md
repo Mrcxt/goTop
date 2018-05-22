@@ -10,39 +10,24 @@
 
 ## 食用方法
 
-### 1.注册组件
+### 1.下载安装
+
+```js
+npm install vue-gotop --save
+```
+
+### 2.注册组件
 
 首先需要注册组件。
 
-**全局注册**
-
-在`main.js`中如下配置：
-
 ```js
-// 首先引入组件
-import goTop from "./components/goTop/goTop.vue";
+import Vue from "vue";
+import goTop from "vue-gotop";
 
-// 全局注册组件
-Vue.component("go-top", goTop);
+Vue.use(goTop);
 ```
 
-**局部注册**
-
-在`xxx.vue`文件中引入组件：
-
-```js
-// 首先引入组件
-import goTop from "./components/goTop/goTop.vue";
-
-export default {
-  name: "App",
-  components: {
-    "go-top": goTop
-  }
-};
-```
-
-### 2.使用组件
+### 3.使用组件
 
 接下来就可以使用啦
 
