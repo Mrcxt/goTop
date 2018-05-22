@@ -2,12 +2,17 @@
 // standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import goTop from './components/goTop/goTop.vue'
+import goTop from '../lib/index'
+
+Vue.use(goTop);
 
 Vue.config.productionTip = false
-Vue.component('go-top', goTop)
 
 /* eslint-disable no-new */
-new Vue({el: '#app', components: {
+new Vue({
+  el: '#app',
+  components: {
     App
-  }, template: '<App/>'})
+  },
+  template: '<App/>'
+})

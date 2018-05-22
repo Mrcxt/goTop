@@ -10,8 +10,14 @@
       <br>
       <br>
     </div>
-    <!--  -->
-    <go-top :height="200" :right="30" :bottom="30" :duration="1000" @on-click="clg"></go-top>
+    <!-- 默认样式 -->
+    <go-top></go-top>
+    <!-- 自定义样式 -->
+    <go-top :height="900" :right="30" :bottom="100" :duration="1000" @on-click="clg">
+      <button class="button">
+        我是自定义的按钮
+      </button>
+    </go-top>
   </div>
 </template>
 
@@ -46,6 +52,30 @@ html {
     p {
       font-size: 30px;
     }
+  }
+  .button {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 12px 20px;
+    outline: 0;
+    border: 1px solid #dcdfe6;
+    border-color: #409eff;
+    border-radius: 100000px;
+    background: #fff;
+    background-color: #409eff;
+    color: #606266;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 1;
+    cursor: pointer;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+
+    -webkit-appearance: none;
   }
 }
 </style>

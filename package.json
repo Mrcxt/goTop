@@ -1,13 +1,15 @@
 {
-  "name": "gotop",
+  "name": "vue-gotop",
+  "description": "vue插件 -- 返回顶部",
   "version": "1.0.0",
-  "description": "A Vue.js project",
-  "author": "mrcxt <847428891@qq.com>",
+  "author": "虾哔哔 <mrcxt@foxmail.com>",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "build-npm": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
     "vue": "^2.5.2"
@@ -24,6 +26,7 @@
     "babel-preset-stage-2": "^6.22.0",
     "chalk": "^2.0.1",
     "copy-webpack-plugin": "^4.0.1",
+    "cross-env": "^5.1.5",
     "css-loader": "^0.28.0",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.4",
@@ -59,5 +62,17 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "main": "lib/index.js",
+  "directories": {
+    "dist": "dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mrcxt/goTop"
+  },
+  "bugs": {
+    "url": "https://github.com/Mrcxt/goTop/issues"
+  },
+  "homepage": "https://github.com/Mrcxt/goTop#readme"
 }
