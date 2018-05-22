@@ -1,7 +1,13 @@
 <template>
   <div id="app">
+    <div class="title">
+      <p>向下滑动</p>
+      <p>↓</p>
+    </div>
     <div v-for="item in 20" :key="item.id">
-      <p>{{ item }}</p>
+      <br>
+      <br>
+      <br>
       <br>
     </div>
     <!--  -->
@@ -28,12 +34,19 @@ export default {
 
 <style lang="less">
 html {
-  background: url("./assets/backgroud1.png") no-repeat center center;
+  background: url("http://oz2tkq0zj.bkt.clouddn.com/17-11-9/19584406.jpg")
+    repeat-y top center;
   background-color: rgba(0, 0, 0, 0.08);
-  background-size: cover;
+  background-size: 100% auto;
 }
 #app {
-  text-align: center;
+  color: #fff;
+  .title {
+    text-align: center;
+    p {
+      font-size: 30px;
+    }
+  }
 }
 </style>
 
