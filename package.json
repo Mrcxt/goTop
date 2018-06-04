@@ -1,7 +1,7 @@
 {
   "name": "vue-gotop",
   "description": "vue插件 -- 返回顶部",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "虾哔哔 <mrcxt@foxmail.com>",
   "license": "MIT",
   "private": false,

@@ -2,7 +2,7 @@
   <div :class="classes" :style="styles" @click="back">
     <slot>
       <div :class="innerClasses">
-        返回顶部
+        回顶部
       </div>
     </slot>
   </div>
@@ -117,6 +117,7 @@ export default {
   position: fixed;
   display: none;
   cursor: pointer;
+  z-index: 1000;
 }
 .i-gotop.i-gotop-show {
   display: block;
@@ -128,6 +129,10 @@ export default {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   color: #fff;
   transition: all 0.2s ease-in-out;
+  text-align: center;
+  line-height: 1.25;
+  width: 36px;
+  box-sizing: border-box;
 }
 </style>
 

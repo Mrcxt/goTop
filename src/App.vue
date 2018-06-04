@@ -13,7 +13,7 @@
     <!-- 默认样式 -->
     <go-top></go-top>
     <!-- 自定义样式 -->
-    <go-top :height="900" :right="30" :bottom="100" :duration="1000" @on-click="clg">
+    <go-top :height="900" :right="30" :bottom="200" :duration="1000" @on-click="clg">
       <button class="button">
         我是自定义的按钮
       </button>
