@@ -4,16 +4,10 @@
       <p>向下滑动</p>
       <p>↓</p>
     </div>
-    <div v-for="item in 20" :key="item.id">
-      <br>
-      <br>
-      <br>
-      <br>
-    </div>
     <!-- 默认样式 -->
     <go-top></go-top>
     <!-- 自定义样式 -->
-    <go-top :height="900" :right="30" :bottom="200" :duration="1000" @on-click="clg">
+    <go-top :height="500" :right="0" :bottom="150" :duration="1000" @on-click="clg">
       <button class="button">
         我是自定义的按钮
       </button>
@@ -40,13 +34,11 @@ export default {
 
 <style lang="less">
 html {
-  background: url("http://oz2tkq0zj.bkt.clouddn.com/17-11-9/19584406.jpg")
-    repeat-y top center;
-  background-color: rgba(0, 0, 0, 0.08);
-  background-size: 100% auto;
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
 }
 #app {
   color: #fff;
+  height: 300vh;
   .title {
     text-align: center;
     p {
