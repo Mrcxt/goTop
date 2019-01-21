@@ -64,8 +64,8 @@ html {
     font-size: 14px;
     line-height: 1;
     cursor: pointer;
-    -webkit-transition: 0.1s;
-    transition: 0.1s;
+    // -webkit-transition: 0.1s;
+    // transition: 0.1s;
 
     -webkit-appearance: none;
   }

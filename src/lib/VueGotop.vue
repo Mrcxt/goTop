@@ -82,7 +82,7 @@ export default {
           };
       }
       const difference = Math.abs(from - to);
-      const step = Math.ceil(difference / duration * 50);
+      const step = Math.ceil((difference / duration) * 50);
 
       function scroll(start, end, step) {
         if (start === end) return;
@@ -128,7 +128,7 @@ export default {
   background-color: rgba(0, 0, 0, 0.6);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   color: #fff;
-  transition: all 0.2s ease-in-out;
+  /* transition: all 0.2s ease-in-out; */
   text-align: center;
   line-height: 1.25;
   width: 36px;
